@@ -2,6 +2,15 @@
 
 This is the official implementation of the paper "Global and Local Attention-Based Free-Form Image Inpainting" published in Sensors ([paper](https://www.mdpi.com/1424-8220/20/11/3204)). Currently we are reformatting the codes. We will upload the pretrained models soon.
 
+### Simply download `Colab-Global-and-Local-Inpainting.ipynb` and open it inside your Google Drive or click [here](https://colab.research.google.com/github/styler00dollar/Colab-Global-and-Local-Inpainting/blob/master/Colab-Global-and-Local-Inpainting.ipynb) and copy the file with "File > Save a copy to Drive..." into your Google Drive. 
+
+### Info about fork:
+- It's pretty alpha and not very flexible, but works
+- Testing/Training in Colab possible
+- [Differentiable Augmentation](https://github.com/mit-han-lab/data-efficient-gans)
+- Currently saving checkpoints in ```/content/repo_name/checkpoints``` despite configuration and that folder is broken in the colab file explorer for some reason. You can access the folder with the terminal.
+- Original repo is overwriting checkpoints, which is pretty bad. Saving different checkpoints seems to be a feature that should be implemented.
+
 ### Prerequisite
 - Python3
 - PyTorch 1.0+ (The code works up to PyTorch 1.4. There seems to be an auto-grad problem with PyTorch 1.5. I will update the code for PyTorch 1.5 after finding the underlying issue.)
